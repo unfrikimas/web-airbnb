@@ -8,6 +8,10 @@
     --concierto: #da595e;
     --clase: #598dda;
     --paseo: #940ad4;
+
+    --shadow-md:  0 0.9px 1.5px rgba(0, 0, 0, 0.03), 
+    0 3.1px 5.5px rgba(0, 0, 0, 0.08), 
+    0 14px 25px rgba(0, 0, 0, 0.12); 
 }
 
 html {
@@ -36,16 +40,18 @@ h3 {
 .hospedaje {
     color: var(--hospedaje);
 }
+
 .concierto {
     color: var(--concierto);
 }
+
 .clase {
     color: var(--clase);
 }
+
 .paseo {
     color: var(--paseo);
 }
-
 
 .contenedor {
     max-width: 1200px;
@@ -131,6 +137,26 @@ form input[type="submit"]:hover {
     cursor: pointer;
 }
 
+.boton {
+    background-color: var(--claro);
+    display: block;
+    padding: 1rem;
+    color: var(--oscuro);
+    text-decoration: none; 
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow-md);
+    transition: all .3s ease-in-out;
+}
+
+.boton:hover {
+    background-color: var(--primario);
+    color: var(--claro);
+}
+
+
 /*Contenido Principal*/
 
 .contenedor-cards {
@@ -159,3 +185,43 @@ form input[type="submit"]:hover {
     color: var(--oscuro);
     font-size: .9rem;
 }
+
+/*premium*/
+
+.premium {
+    background-image: url(../img/hospedaje-pro.jpg);
+    background-repeat: no-repeat;
+    grid-template-columns: unset;
+    height: 28rem;
+}
+
+@media (min-width: 768px) {
+    .premium {
+        grid-template-columns: auto 35%;
+    }
+
+    .premium .info {
+        grid-column: 2 / 3;
+    }
+}
+
+.premium .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.premium .info h3 {
+    text-align: center;
+    color: var(--claro);
+    font-size: 2.5rem;
+}
+
+@media (min-width:768px) {
+    .premium .info h3 {
+        text-align: center;
+        color: var(--oscuro);
+    }
+}
+
