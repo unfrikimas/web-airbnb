@@ -1,0 +1,49 @@
+:root {
+    --fuente-principal: 'Lato', sans-serif;
+    --primario: #da595e;
+    --oscuro: #484848;
+    --claro: #fff;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fuente-principal);
+}
+
+h1 {
+    font-size: 2.6rem;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero {
+    height: 100vh;
+    background-image: url('../img/arriba.jpg');
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-start;
+    align-items: center;
+    width: 100%;
+    padding-top: 1rem;
+}
