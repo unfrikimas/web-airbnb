@@ -12,6 +12,17 @@
     --shadow-md:  0 0.9px 1.5px rgba(0, 0, 0, 0.03), 
     0 3.1px 5.5px rgba(0, 0, 0, 0.08), 
     0 14px 25px rgba(0, 0, 0, 0.12); 
+    
+    --shadow-lg:  0 1.2px 1.9px -1px rgba(0, 0, 0, 0.014), 
+    0 3.3px 5.3px -1px rgba(0, 0, 0, 0.038), 
+    0 8.5px 12.7px -1px rgba(0, 0, 0, 0.085), 
+    0 30px 42px -1px rgba(0, 0, 0, 0.15);
+    
+    --shadow-xl:  0 1.5px 2.1px -6px rgba(0, 0, 0, 0.012), 
+    0 3.6px 5.2px -6px rgba(0, 0, 0, 0.035), 
+    0 7.3px 10.6px -6px rgba(0, 0, 0, 0.07), 
+    0 16.2px 21.9px -6px rgba(0, 0, 0, 0.117), 
+    0 46px 60px -6px rgba(0, 0, 0, 0.2);
 }
 
 html {
@@ -266,10 +277,26 @@ form input[type="submit"]:hover {
     color: var(--claro);
 }
 
+.actividades {
+    margin-bottom: 5rem;
+}
+
 /*footer*/
 
 .footer {
+    position: fixed;
+    bottom: -100%;
+    background-color: var(--claro);
+    width: 100%;
+    -webkit-box-shadow: 3px -8px 33px -19px rgba(0,0,0,0.49);
+    -moz-box-shadow: 3px -8px 33px -19px rgba(0,0,0,0.49);
+    box-shadow: 3px -8px 33px -19px rgba(0,0,0,0.49);
+    transition: all .3s ease-in-out;
+    padding: 2rem 0;
+}
 
+.footer.activo {
+    bottom: 0;
 }
 
 .nav-footer {
@@ -301,6 +328,7 @@ form input[type="submit"]:hover {
     /* justify-content: flex-end; */
     flex: 1 0 auto;
     list-style: none;
+    margin-bottom: 0;
 }
 
 .sociales ul li {
