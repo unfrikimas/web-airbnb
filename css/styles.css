@@ -170,10 +170,10 @@ form input[type="submit"]:hover {
     transition: all .3s ease-in-out;
 }
 
-/* .btn-flotante.activo {
+.btn-flotante.activo {
     background-color: var(--primario);
     color: var(--claro);
-} */
+}
 
 .btn-flotante:hover {
     background-color: var(--primario);
