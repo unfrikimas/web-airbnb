@@ -157,6 +157,29 @@ form input[type="submit"]:hover {
     color: var(--claro);
 }
 
+.btn-flotante {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: var(--claro);
+    padding: .5rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: var(--shadow-md);
+    color: var(--oscuro);
+    transition: all .3s ease-in-out;
+}
+
+/* .btn-flotante.activo {
+    background-color: var(--primario);
+    color: var(--claro);
+} */
+
+.btn-flotante:hover {
+    background-color: var(--primario);
+    color: var(--claro);
+}
+
 
 /*Contenido Principal*/
 
